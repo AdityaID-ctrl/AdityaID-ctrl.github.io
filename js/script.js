@@ -13,3 +13,19 @@ $('.page-scroll').on('click', function(e){
 
     e.preventDefault();
 });
+
+
+
+
+//parallax
+$(window).scroll(function() {
+    var wScroll = $(this).scrollTop();
+    console.log(wScroll);
+});
+
+
+
+
+
+
+
