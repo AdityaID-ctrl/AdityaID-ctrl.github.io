@@ -8,12 +8,13 @@ body {
 }
 
 .jumbotron {
-	height: 400px;
+	height: 450px;
 	background-image: url('../img/header-bg.png');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: 0 -100px;
 	color: #eaeaea;
+	overflow: hidden;
 }
 
 
@@ -40,6 +41,17 @@ section {
 
 .portfolio {
 	background-color: #eee;
+}
+
+.portfolio .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.portfolio .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
 }
 
 .contact {
